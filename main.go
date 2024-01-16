@@ -13,7 +13,6 @@ func main() {
 
     for i := 1; i <= 100; i++ {
         wg.Add(1)
-        i := i
         go func() {
             lock.Lock()
             ids = append(ids, i)
