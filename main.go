@@ -7,6 +7,10 @@ import (
 )
 
 func main() {
+    doStuff()
+}
+
+func doStuff() {
     var ids []int
     lock := sync.Mutex{}
     wg := sync.WaitGroup{}
